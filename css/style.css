@@ -1,0 +1,89 @@
+
+/* Aca hago un reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/Encriptador/img/fondocandados.jpg");
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la ventana */
+    background-position: center; /* Centra la imagen de fondo */
+    font-family: Arial, sans-serif; /* Fuente de texto predeterminada */
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Al menos el 100% de la altura de la ventana */
+    flex: 1;
+}
+footer {
+    position: fixed; /* Fija el footer en la parte inferior */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    background-color:#223c9c;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+h1,h2,label{
+    color: #ded8ff;
+}
+/* Resto de estilos para el texto de entrada, botones y video de fondo */
+#textoUsuario {
+    padding: 10px;
+    width: 90%;
+    height: 100px;
+    resize: vertical;
+    overflow-y: auto;
+    caret-color: #4359c0;
+    cursor: text;
+    text-align: start;
+    margin: 10px auto; /* Margen superior e inferior de 10px y centrado horizontalmente */
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#112d89;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+@media (max-width: 768px) {
+    #textoUsuario {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    #textoUsuario {
+        width: 90%;
+    }
+}

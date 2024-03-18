@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Encriptador/css/style.css">
+     <!-- <script src="js/app.js"></script><!-- Poner siempre al final ya que 
+        si lo agrego en el head tira error en el DOM
+    SINO PONGO EL APARTADO DEFER Y PUEDO COLOCARLO DENTRO DEL HEAD SE RECOMIENDA SIEMPRE PONER CUANDO EL JS INTERACTUA CON EL HTML-->
+    <script defer src="js/app.js"></script>   
+    <link rel="icon" type="icono.png" href="/Encriptador/img/Lock -7.jpg" alt="imagenCandado.png"><!--Pongo el inoco en la solapa de navegacion-->
+    <title =>Encriptador</title>
+
+</head>
+<body>
+    <header>
+        <h1>Encriptador</h1>
+    </header>
+
+    <main>
+        
+        <main>
+            <section>            
+                <video id="videoFondo" type="MIME" src="/Encriptador/video/vecteezy_looping-matrix-style-cyrillic-alphabet-code-rain-effect_6102172.mov"></video>
+            </section>
+            <section>
+                <h2>Controles de Encriptación</h2>
+                <label for="textoUsuario">Texto a Encriptar/Desencriptar:</label>
+                <div class="input-container">
+                    <input type="text" id="textoUsuario" placeholder="Ingrese texto...">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+                    <textarea id="area" cols="52" rows="8" placeholder="Resultado de la encriptación/desencriptación..."></textarea>
+                <div class="button-container">
+                    <button id="copiar">Copiar</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </section>
+        </main>
+        
+
+    <footer>
+        <p>&copy; 2024 Encriptador. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
